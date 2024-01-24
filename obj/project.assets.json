@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net7.0": {
-      "Microsoft.AspNetCore.OpenApi/7.0.9": {
+      "Microsoft.AspNetCore.OpenApi/7.0.10": {
         "type": "package",
         "dependencies": {
           "Microsoft.OpenApi": "1.4.3"
@@ -111,10 +111,10 @@
     }
   },
   "libraries": {
-    "Microsoft.AspNetCore.OpenApi/7.0.9": {
-      "sha512": "5kBnHntQTJqmYV66Khdl9OJ/j2Pw8cOKj8kNQuLCpfCsPbSijp334Vaad3vaGnG9Wpgq/VbSUSRxZOoroOe8zQ==",
+    "Microsoft.AspNetCore.OpenApi/7.0.10": {
+      "sha512": "p5LiYt1mFJdS70zyHoydahohko2pLIoXiXwANRZGYYyTXcYNQpNUOt+At+lUgGgRwta28sUKVhy2W/93j0qwhA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.openapi/7.0.9",
+      "path": "microsoft.aspnetcore.openapi/7.0.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -122,7 +122,7 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net7.0/Microsoft.AspNetCore.OpenApi.dll",
         "lib/net7.0/Microsoft.AspNetCore.OpenApi.xml",
-        "microsoft.aspnetcore.openapi.7.0.9.nupkg.sha512",
+        "microsoft.aspnetcore.openapi.7.0.10.nupkg.sha512",
         "microsoft.aspnetcore.openapi.nuspec"
       ]
     },
@@ -464,30 +464,29 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Microsoft.AspNetCore.OpenApi >= 7.0.9",
+      "Microsoft.AspNetCore.OpenApi >= 7.0.10",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
   "packageFolders": {
-    "/Users/abigailtarpley/.nuget/packages/": {}
+    "C:\\Users\\sean_\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/abigailtarpley/Desktop/final-project/silverscreenback/silverscreen/silverscreen.csproj",
-      "projectName": "silverscreen",
-      "projectPath": "/Users/abigailtarpley/Desktop/final-project/silverscreenback/silverscreen/silverscreen.csproj",
-      "packagesPath": "/Users/abigailtarpley/.nuget/packages/",
-      "outputPath": "/Users/abigailtarpley/Desktop/final-project/silverscreenback/silverscreen/obj/",
+      "projectUniqueName": "C:\\Users\\sean_\\Desktop\\Final_Project\\silverscreenback\\team-gung-ho-coders-backend\\team-gung-ho-coders-backend.csproj",
+      "projectName": "team-gung-ho-coders-backend",
+      "projectPath": "C:\\Users\\sean_\\Desktop\\Final_Project\\silverscreenback\\team-gung-ho-coders-backend\\team-gung-ho-coders-backend.csproj",
+      "packagesPath": "C:\\Users\\sean_\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sean_\\Desktop\\Final_Project\\silverscreenback\\team-gung-ho-coders-backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/abigailtarpley/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\sean_\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/sdk/7.0.306/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -508,7 +507,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
-            "version": "[7.0.9, )"
+            "version": "[7.0.10, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
@@ -534,7 +533,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
