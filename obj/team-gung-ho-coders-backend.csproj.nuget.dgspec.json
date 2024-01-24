@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sean_\\Desktop\\Final_Project\\silverscreenback\\team-gung-ho-coders-backend\\silverscreen.csproj": {}
+    "C:\\Users\\sean_\\Desktop\\Final_Project\\silverscreenback\\team-gung-ho-coders-backend\\team-gung-ho-coders-backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sean_\\Desktop\\Final_Project\\silverscreenback\\team-gung-ho-coders-backend\\silverscreen.csproj": {
+    "C:\\Users\\sean_\\Desktop\\Final_Project\\silverscreenback\\team-gung-ho-coders-backend\\team-gung-ho-coders-backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sean_\\Desktop\\Final_Project\\silverscreenback\\team-gung-ho-coders-backend\\silverscreen.csproj",
-        "projectName": "silverscreen",
-        "projectPath": "C:\\Users\\sean_\\Desktop\\Final_Project\\silverscreenback\\team-gung-ho-coders-backend\\silverscreen.csproj",
+        "projectUniqueName": "C:\\Users\\sean_\\Desktop\\Final_Project\\silverscreenback\\team-gung-ho-coders-backend\\team-gung-ho-coders-backend.csproj",
+        "projectName": "team-gung-ho-coders-backend",
+        "projectPath": "C:\\Users\\sean_\\Desktop\\Final_Project\\silverscreenback\\team-gung-ho-coders-backend\\team-gung-ho-coders-backend.csproj",
         "packagesPath": "C:\\Users\\sean_\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\sean_\\Desktop\\Final_Project\\silverscreenback\\team-gung-ho-coders-backend\\obj\\",
         "projectStyle": "PackageReference",
@@ -40,7 +40,7 @@
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[7.0.9, )"
+              "version": "[7.0.10, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
