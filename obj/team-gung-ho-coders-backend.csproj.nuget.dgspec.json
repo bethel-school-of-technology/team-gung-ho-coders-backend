@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sean_\\Desktop\\Final_Project\\silverscreenback\\team-gung-ho-coders-backend\\team-gung-ho-coders-backend.csproj": {}
+    "C:\\Users\\sean_\\Desktop\\team-gung-ho-coders-backend\\team-gung-ho-coders-backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sean_\\Desktop\\Final_Project\\silverscreenback\\team-gung-ho-coders-backend\\team-gung-ho-coders-backend.csproj": {
+    "C:\\Users\\sean_\\Desktop\\team-gung-ho-coders-backend\\team-gung-ho-coders-backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sean_\\Desktop\\Final_Project\\silverscreenback\\team-gung-ho-coders-backend\\team-gung-ho-coders-backend.csproj",
+        "projectUniqueName": "C:\\Users\\sean_\\Desktop\\team-gung-ho-coders-backend\\team-gung-ho-coders-backend.csproj",
         "projectName": "team-gung-ho-coders-backend",
-        "projectPath": "C:\\Users\\sean_\\Desktop\\Final_Project\\silverscreenback\\team-gung-ho-coders-backend\\team-gung-ho-coders-backend.csproj",
+        "projectPath": "C:\\Users\\sean_\\Desktop\\team-gung-ho-coders-backend\\team-gung-ho-coders-backend.csproj",
         "packagesPath": "C:\\Users\\sean_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sean_\\Desktop\\Final_Project\\silverscreenback\\team-gung-ho-coders-backend\\obj\\",
+        "outputPath": "C:\\Users\\sean_\\Desktop\\team-gung-ho-coders-backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sean_\\AppData\\Roaming\\NuGet\\NuGet.Config"
