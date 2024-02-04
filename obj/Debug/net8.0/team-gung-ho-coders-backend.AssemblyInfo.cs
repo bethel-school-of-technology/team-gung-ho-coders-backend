@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("team-gung-ho-coders-backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a9a73a340084033a43fcc03e4cc254241aefedb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1e758d0aa3cffb72c06b5c91646cc095c934777")]
 [assembly: System.Reflection.AssemblyProductAttribute("team-gung-ho-coders-backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("team-gung-ho-coders-backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
