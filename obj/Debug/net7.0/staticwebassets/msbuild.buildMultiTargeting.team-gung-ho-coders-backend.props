@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\team-gung-ho-coders-backend.props" />
+</Project>
