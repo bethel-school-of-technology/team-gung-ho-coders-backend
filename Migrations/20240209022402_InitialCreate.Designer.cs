@@ -10,7 +10,7 @@ using team_gung_ho_coders_backend.Migrations;
 namespace teamgunghocodersbackend.Migrations
 {
     [DbContext(typeof(MovieDbContext))]
-    [Migration("20240208034634_InitialCreate")]
+    [Migration("20240209022402_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
