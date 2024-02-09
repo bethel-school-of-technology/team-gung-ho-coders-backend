@@ -13,6 +13,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSqlite<MovieDbContext>("Data Source=team_gung_ho_coders_backend.db");
 builder.Services.AddScoped<IMovieRepository, MovieRepository>();
+builder.Services.AddScoped<IMovieReviewRepository, MovieReviewRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -21,12 +22,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
 app.UseCors(builder => builder
     .WithOrigins("http://localhost:4200", "http://localhost:3000")
     .AllowAnyHeader()
     .AllowAnyMethod());
-
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
