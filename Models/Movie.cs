@@ -8,5 +8,7 @@ public class Movie
     [Required(ErrorMessage = "A movie title is required to search.")]
     [Display(Name = "Movie Title")]
     public string? MovieTitle { get; set; }
-
+    [Required(ErrorMessage = "An image is required to search.")]
+    [Display(Name = "Image")]
+    public string? ImgUrl { get; set; }
 }
