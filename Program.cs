@@ -40,7 +40,6 @@ builder.Services.AddScoped<IMovieRepository, MovieRepository>();
 builder.Services.AddScoped<IMovieReviewRepository, MovieReviewRepository>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 var secretKey = builder.Configuration?["TokenSecret"];
-var app = builder.Build();
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -62,6 +61,7 @@ builder.Services.AddAuthentication(options =>
     };
 }
 );
+var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
