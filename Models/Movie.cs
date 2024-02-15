@@ -9,4 +9,5 @@ public class Movie
     [Display(Name = "Movie Title")]
     public string? MovieTitle { get; set; }
 
+    public int? UserId  { get; set; }
 }
