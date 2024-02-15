@@ -47,7 +47,6 @@ namespace teamgunghocodersbackend.Migrations
                     UserId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     UserName = table.Column<string>(type: "TEXT", nullable: false),
-                    Email = table.Column<string>(type: "TEXT", nullable: false),
                     Password = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
@@ -73,11 +72,14 @@ namespace teamgunghocodersbackend.Migrations
                     { 2, 1, "This movie was not very good. Total snooze fest." }
                 });
 
-            migrationBuilder.CreateIndex(
-                name: "IX_Users_Email",
+            migrationBuilder.InsertData(
                 table: "Users",
-                column: "Email",
-                unique: true);
+                columns: new[] { "UserId", "Password", "UserName" },
+                values: new object[,]
+                {
+                    { 1, "G0dl0v3sth3l1ttl3ch1ldr3n", "waymaker6557" },
+                    { 2, "Ch0s3nbl3ss3dl0v3d", "blessedboy327" }
+                });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Users_UserName",

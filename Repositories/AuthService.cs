@@ -30,7 +30,7 @@ public class AuthService : IAuthService
         return user;
     }
 
-    public string SignIn(string username, string email, string password)
+    public string SignIn(string username, string password)
     {
         var user = _context.Users.SingleOrDefault(x => x.UserName == username);
         var verified = false;
@@ -60,7 +60,6 @@ public class AuthService : IAuthService
         var claims = new Claim[]
         {
         new Claim(JwtRegisteredClaimNames.Sub, user.UserId.ToString()),
-        new Claim(JwtRegisteredClaimNames.Email, user.Email ?? ""),
         new Claim(JwtRegisteredClaimNames.UniqueName, user.UserName ?? ""),
         };
 

@@ -67,9 +67,20 @@ public class MovieDbContext : DbContext
             entity.HasKey(e => e.UserId);
             entity.Property(e => e.UserName).IsRequired();
             entity.HasIndex(x => x.UserName).IsUnique();
-            entity.Property(e => e.Email).IsRequired();
-            entity.HasIndex(x => x.Email).IsUnique();
             entity.Property(e => e.Password).IsRequired();
+        });
+        modelBuilder.Entity<User>().HasData(
+        new User
+        {
+        UserId = 1,
+        UserName = "waymaker6557",
+        Password = "G0dl0v3sth3l1ttl3ch1ldr3n",
+        },
+        new User
+        {
+        UserId = 2,
+        UserName = "blessedboy327",
+        Password = "Ch0s3nbl3ss3dl0v3d",
         });
     }
 

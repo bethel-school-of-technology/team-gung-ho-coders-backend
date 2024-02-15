@@ -6,7 +6,7 @@ namespace team_gung_ho_coders_backend.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class AuthController : ControllerBase 
+public class AuthController : ControllerBase
 {
     private readonly ILogger<AuthController> _logger;
     private readonly IAuthService _authService;
@@ -17,7 +17,7 @@ public class AuthController : ControllerBase
         _authService = service;
     }
 
-        [HttpPost]
+    [HttpPost]
     [Route("register")]
     public ActionResult CreateUser(User user)
     {
@@ -29,16 +29,16 @@ public class AuthController : ControllerBase
         return NoContent();
     }
 
-    [HttpGet]
+    [HttpPost]
     [Route("login")]
-    public ActionResult<string> SignIn(string username, string email, string password)
+    public ActionResult<string> SignIn(string username, string password)
     {
         if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
         {
             return BadRequest();
         }
 
-        var token = _authService.SignIn(username, email, password);
+        var token = _authService.SignIn(username, password);
 
         if (string.IsNullOrWhiteSpace(token))
         {

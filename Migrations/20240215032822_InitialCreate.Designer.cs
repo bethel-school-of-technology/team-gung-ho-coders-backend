@@ -10,7 +10,7 @@ using team_gung_ho_coders_backend.Migrations;
 namespace teamgunghocodersbackend.Migrations
 {
     [DbContext(typeof(MovieDbContext))]
-    [Migration("20240212162841_InitialCreate")]
+    [Migration("20240215032822_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -91,10 +91,6 @@ namespace teamgunghocodersbackend.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
                     b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("TEXT");
@@ -105,13 +101,24 @@ namespace teamgunghocodersbackend.Migrations
 
                     b.HasKey("UserId");
 
-                    b.HasIndex("Email")
-                        .IsUnique();
-
                     b.HasIndex("UserName")
                         .IsUnique();
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = 1,
+                            Password = "G0dl0v3sth3l1ttl3ch1ldr3n",
+                            UserName = "waymaker6557"
+                        },
+                        new
+                        {
+                            UserId = 2,
+                            Password = "Ch0s3nbl3ss3dl0v3d",
+                            UserName = "blessedboy327"
+                        });
                 });
 #pragma warning restore 612, 618
         }
