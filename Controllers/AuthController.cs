@@ -31,14 +31,14 @@ public class AuthController : ControllerBase
 
     [HttpPost]
     [Route("login")]
-    public ActionResult<string> SignIn(string username, string password)
+    public ActionResult<string> SignIn(User user)
     {
-        if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
+        if (string.IsNullOrWhiteSpace(user.UserName) || string.IsNullOrWhiteSpace(user.Password))
         {
             return BadRequest();
         }
 
-        var token = _authService.SignIn(username, password);
+        var token = _authService.SignIn(user);
 
         if (string.IsNullOrWhiteSpace(token))
         {

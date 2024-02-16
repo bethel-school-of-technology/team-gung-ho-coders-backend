@@ -30,14 +30,16 @@ public class AuthService : IAuthService
         return user;
     }
 
-    public string SignIn(string username, string password)
+    public string SignIn(User userData)
     {
-        var user = _context.Users.SingleOrDefault(x => x.UserName == username);
+        var user = _context.Users.SingleOrDefault(x => x.UserName == userData.UserName);
         var verified = false;
+
+    
 
         if (user != null)
         {
-            verified = bcrypt.Verify(password, user.Password);
+            verified = bcrypt.Verify(userData.Password, user.Password);
         }
 
         if (user == null || !verified)
