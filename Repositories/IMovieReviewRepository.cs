@@ -6,6 +6,7 @@ public interface IMovieReviewRepository
 {
     IEnumerable<MovieReview> GetAllMovieReview();
     MovieReview? GetMovieReviewById(int movieReviewId);
-    MovieReview CreateMovieReview(MovieReview newMovieReview);
-
+    MovieReview? CreateMovieReview(MovieReview newMovieReview);
+    MovieReview? UpdateMovieReview(MovieReview newMovieReview);
+    void DeleteMovieReviewById(int movieReviewId);
 }

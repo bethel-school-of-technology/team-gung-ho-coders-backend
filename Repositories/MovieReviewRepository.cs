@@ -30,4 +30,23 @@ public class MovieReviewRepository : IMovieReviewRepository
         return _context.MovieReview.SingleOrDefault(c => c.MovieReviewId == movieReviewId);
     }
 
+    public MovieReview? UpdateMovieReview(MovieReview newMovieReview)
+    {
+        var originalMovieReview = _context.MovieReview.Find(newMovieReview.MovieReviewId);
+        if (originalMovieReview != null) {
+            originalMovieReview.TextBody = newMovieReview.TextBody;
+            originalMovieReview.MovieRating = newMovieReview.MovieRating;
+            _context.SaveChanges();
+        }
+        return originalMovieReview;
+    }
+
+        public void DeleteMovieReviewById(int movieReviewId)
+    {
+        var movieReview = _context.MovieReview.Find(movieReviewId);
+        if (movieReview != null) {
+            _context.MovieReview.Remove(movieReview); 
+            _context.SaveChanges(); 
+        }
+    }
 }

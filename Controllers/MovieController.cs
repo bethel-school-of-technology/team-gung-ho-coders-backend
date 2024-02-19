@@ -38,7 +38,7 @@ namespace team_gung_ho_coders_backend.Controllers
         }
 
         [HttpPost]
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        // [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public ActionResult<Movie> CreateMovie(Movie movie) 
         {
             if (!ModelState.IsValid || movie == null) {
@@ -46,6 +46,26 @@ namespace team_gung_ho_coders_backend.Controllers
             }
             var newMovie = _movieRepository.CreateMovie(movie);
             return Created(nameof(GetMovieById), newMovie);
+        }
+
+        [HttpPut]
+        [Route("{movieId:int}")]
+        // [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        public ActionResult<Movie> UpdateMovie(Movie movie) 
+        {
+            if (!ModelState.IsValid || movie == null) {
+                return BadRequest();
+            }
+            return Ok(_movieRepository.UpdateMovie(movie));
+        }
+
+        [HttpDelete]
+        [Route("{movieId:int}")]
+        // [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        public ActionResult DeleteMovie(int movieId) 
+        {
+            _movieRepository.DeleteMovieById(movieId); 
+            return NoContent();
         }
 
     }
