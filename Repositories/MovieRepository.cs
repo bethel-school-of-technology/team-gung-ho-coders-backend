@@ -30,4 +30,24 @@ public class MovieRepository : IMovieRepository
         return _context.Movie.SingleOrDefault(c => c.MovieId == movieId);
     }
 
+    public Movie? UpdateMovie(Movie newMovie)
+    {
+        var originalMovie = _context.Movie.Find(newMovie.MovieId);
+        if (originalMovie != null) {
+            originalMovie.MovieTitle = newMovie.MovieTitle;
+            originalMovie.ImgUrl = newMovie.ImgUrl;
+            _context.SaveChanges();
+        }
+        return originalMovie;
+    }
+
+        public void DeleteMovieById(int movieId)
+    {
+        var movie = _context.Movie.Find(movieId);
+        if (movie != null) {
+            _context.Movie.Remove(movie); 
+            _context.SaveChanges(); 
+        }
+    }
+
 }
