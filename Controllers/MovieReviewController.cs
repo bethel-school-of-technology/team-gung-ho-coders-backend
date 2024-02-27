@@ -1,6 +1,6 @@
 using team_gung_ho_coders_backend.Models;
 using team_gung_ho_coders_backend.Repositories;
-//using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -39,7 +39,7 @@ namespace team_gung_ho_coders_backend.Controllers
         }
 
         [HttpPost]
-        // [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public ActionResult<MovieReview> CreateMovieReview(MovieReview movieReview)
         {
             if (!ModelState.IsValid || movieReview == null)
@@ -52,7 +52,7 @@ namespace team_gung_ho_coders_backend.Controllers
 
         [HttpPut]
         [Route("{movieReviewId:int}")]
-        // [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public ActionResult<MovieReview> UpdateMovieReview(MovieReview movieReview)
         {
             if (!ModelState.IsValid || movieReview == null)
@@ -64,7 +64,7 @@ namespace team_gung_ho_coders_backend.Controllers
 
         [HttpDelete]
         [Route("{movieReviewId:int}")]
-        // [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public ActionResult DeleteMovieReview(int movieReviewId)
         {
             _movieReviewRepository.DeleteMovieReviewById(movieReviewId);
